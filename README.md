@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # SMART JUNCTION AI — Traffic Monitoring & Predictive Anomaly Alert System
 
 > **A Next-Generation Smart City Traffic Command Center** powered by FastAPI, SQLite, Scikit-Learn (Isolation Forest & Gradient Boosting Regressors), and React + Vite with Tailwind CSS.
@@ -177,3 +178,6 @@ When presenting to evaluators, professors, or project reviewers:
 
 - **Simulated Data Notice**: Physical induction loops and city-wide optical traffic cameras are simulated using Greenshields macroscopic traffic flow theory, diurnal curves, and stochastic noise.
 - **Model Evaluation**: Model accuracy and metrics ($R^2$, MAE, RMSE) are evaluated strictly against synthetic holdout splits and are never artificially inflated.
+=======
+# AI-Based-Smart-Junction-Monitoring
+>>>>>>> 6b6ab1bd9ae0e4c79961c299b242b8e0e4dabcf8
