@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  background-color: #070B18;
+  color: #F8FAFC;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0B1224;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1E293B;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3B82F6;
+}
+
+/* Glassmorphism Panel Utilities */
+.glass-panel {
+  background: rgba(11, 18, 36, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(59, 130, 246, 0.15);
+}
+
+.glass-panel-hover {
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-panel-hover:hover {
+  border-color: rgba(34, 211, 238, 0.35);
+  box-shadow: 0 0 20px -3px rgba(34, 211, 238, 0.15);
+}
+
+/* Cyber Glow Accents */
+.text-glow-cyan {
+  text-shadow: 0 0 10px rgba(34, 211, 238, 0.5);
+}
+
+.text-glow-blue {
+  text-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+}
+
+.text-glow-rose {
+  text-shadow: 0 0 10px rgba(239, 68, 68, 0.5);
+}
+
+/* SVG Flow Stream Animation */
+@keyframes dashStream {
+  to {
+    stroke-dashoffset: -40;
+  }
+}
+
+.animate-traffic-stream {
+  stroke-dasharray: 6 8;
+  animation: dashStream 1.8s linear infinite;
+}
+
+.animate-traffic-stream-fast {
+  stroke-dasharray: 6 8;
+  animation: dashStream 0.9s linear infinite;
+}
+
+.animate-traffic-stream-slow {
+  stroke-dasharray: 6 8;
+  animation: dashStream 3.5s linear infinite;
+}
+
+/* Pulse badge */
+@keyframes radarSweep {
+  0% {
+    transform: scale(0.9);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.4);
+    opacity: 0.2;
+  }
+  100% {
+    transform: scale(0.9);
+    opacity: 0.8;
+  }
+}
+
+.radar-sweep {
+  animation: radarSweep 2.5s ease-in-out infinite;
+}

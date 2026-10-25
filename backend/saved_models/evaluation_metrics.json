@@ -1,0 +1,25 @@
+{
+  "forecast_15m": {
+    "mae": 2.97,
+    "rmse": 4.91,
+    "r2": 0.975,
+    "accuracy_pct": 97.5
+  },
+  "forecast_30m": {
+    "mae": 3.26,
+    "rmse": 5.24,
+    "r2": 0.972,
+    "accuracy_pct": 97.2
+  },
+  "anomaly_detector": {
+    "contamination": 0.045,
+    "samples_trained": 4800,
+    "n_trees": 150,
+    "features_analyzed": [
+      "vehicle_count",
+      "avg_speed",
+      "density_pct",
+      "waiting_time_sec"
+    ]
+  }
+}
